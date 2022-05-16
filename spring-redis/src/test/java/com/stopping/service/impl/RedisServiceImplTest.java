@@ -24,7 +24,7 @@ public class RedisServiceImplTest {
 
     @Test
     public void setValue(){
-        redisServiceImpl.setString("hello","hello");
-        log.info(redisServiceImpl.getString("hello"));
+        redisServiceImpl.setString("hello-serializer-1","serializer");
+        log.info(redisServiceImpl.getString("hello-serializer"));
     }
 }
