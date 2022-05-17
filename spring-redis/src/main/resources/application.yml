@@ -1,3 +1,4 @@
+
 spring:
   redis:
     host: 120.24.242.44
@@ -10,3 +11,9 @@ spring:
         max-idle: 4
         max-wait: 3000
         min-idle: 0
+
+# 服务端口8080 服务上下文路径 /redis
+server:
+  servlet:
+    context-path: /redis
+  port: 8080
