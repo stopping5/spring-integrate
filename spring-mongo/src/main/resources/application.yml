@@ -1,0 +1,14 @@
+# 服务端口8080 服务上下文路径 /redis
+server:
+  servlet:
+    context-path: /mongo
+  port: 8084
+
+spring:
+  data:
+    mongodb:
+      host: 120.24.242.44
+      port: 27017
+      database: test
+      username: stopping
+      password: xdp123456
