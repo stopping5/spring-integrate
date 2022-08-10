@@ -6,7 +6,9 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+
 import javax.annotation.Resource;
+import javax.jws.soap.SOAPBinding;
 
 /**
  * Redis实现
