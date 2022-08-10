@@ -9,16 +9,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-feign" />
         <module name="spring-redis" />
+        <module name="spring-open-resource" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-feign" target="1.8" />
+      <module name="spring-open-resource" target="1.8" />
       <module name="spring-redis" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-feign" options="-parameters" />
+      <module name="spring-open-resource" options="-parameters" />
       <module name="spring-redis" options="-parameters" />
     </option>
   </component>
