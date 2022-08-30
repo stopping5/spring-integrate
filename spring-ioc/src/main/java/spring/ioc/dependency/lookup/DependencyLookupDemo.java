@@ -16,6 +16,14 @@ public class DependencyLookupDemo {
     public static void main(String[] args) {
         //从xml文件读取BeanFactory
         BeanFactory beanFactory = new ClassPathXmlApplicationContext("classpath:/META-INF/dependency-lookup-content.xml");
+        //lookup(beanFactory);
+    }
+
+    /**
+     * 依赖查找
+     * @param beanFactory
+     */
+    private static void lookup(BeanFactory beanFactory) {
         //通过bean的名称查找
         lookupByNameRealTime(beanFactory);
         lookupByNameLazy(beanFactory);

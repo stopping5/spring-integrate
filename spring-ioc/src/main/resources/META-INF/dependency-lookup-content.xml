@@ -7,10 +7,10 @@
         <property name="name" value="stopping"/>
     </bean>
 
-<!--    <bean id="user2" class="spring.ioc.dependency.lookup.pojo.User">
+    <bean id="user2" class="spring.ioc.dependency.lookup.pojo.User">
         <property name="id" value="2"/>
         <property name="name" value="stopping2"/>
-    </bean>-->
+    </bean>
 
     <bean id="superUser" class="spring.ioc.dependency.lookup.pojo.SuperUser" parent="user">
         <property name="address" value="深圳"/>
