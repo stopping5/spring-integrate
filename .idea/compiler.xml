@@ -17,11 +17,11 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-feign" target="1.8" />
-      <module name="spring-ioc" target="1.8" />
+      <module name="spring-ioc" target="8" />
       <module name="spring-mongo" target="1.8" />
-      <module name="spring-open-resource" target="1.8" />
+      <module name="spring-open-resource" target="8" />
       <module name="spring-redis" target="1.8" />
-      <module name="spring-spel" target="1.8" />
+      <module name="spring-spel" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

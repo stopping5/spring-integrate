@@ -2,6 +2,7 @@ package com.stopping;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 /**
  * @Classname: SpelApplication
@@ -10,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author: stopping
  */
 @SpringBootApplication
+@EnableAspectJAutoProxy
 public class SpelApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpelApplication.class);
