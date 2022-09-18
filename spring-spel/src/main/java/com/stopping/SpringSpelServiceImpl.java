@@ -27,7 +27,7 @@ public class SpringSpelServiceImpl {
     private DefaultParameterNameDiscoverer parameterNameDiscoverer = new DefaultParameterNameDiscoverer();
 
     public static void main(String[] args) {
-        valueDemo();
+        valuePoJODemo();
     }
 
     public void simpleDemo(){
@@ -43,6 +43,18 @@ public class SpringSpelServiceImpl {
         context.setVariable("newName","new Stopping");
         //编写表达式
         String newName =  spelExpressionParser.parseExpression("#newName").getValue(context).toString();
+        System.out.println(newName);
+    }
+
+    public static void valuePoJODemo(){
+        User user = new User("stopping",18);
+        EvaluationContext context = new StandardEvaluationContext();
+        //设置变量
+        //将实体类User映射的参数名为user
+        //在SpEL中通过#user即可获取到变量，#user.username 可以映射到内部参数
+        context.setVariable("user",user);
+        //编写表达式
+        String newName =  spelExpressionParser.parseExpression("#user.username").getValue(context).toString();
         System.out.println(newName);
     }
 }
