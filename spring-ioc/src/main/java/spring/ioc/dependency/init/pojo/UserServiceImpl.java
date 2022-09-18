@@ -1,11 +1,13 @@
 package spring.ioc.dependency.init.pojo;
 
+import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
-public class UserServiceImpl implements InitializingBean {
+public class UserServiceImpl implements InitializingBean, DisposableBean {
     private String initMethodName = "";
 
     public String getInitMethodName() {
@@ -39,5 +41,28 @@ public class UserServiceImpl implements InitializingBean {
     public void initUserService(){
         initMethodName = "initMethodName";
         System.out.println("通过initMethodName初始化UserServiceImpl");
+    }
+
+    @PreDestroy
+    public void preDestroy(){
+        System.out.println("@PreDestroy:销毁UserServiceImpl");
+    }
+
+
+
+    /**
+     * 通过@bean destroyMethod 在bean销毁的时候回调用
+     */
+    private void destroyUserService() {
+        System.out.println("destroyMethod:销毁UserServiceImpl");
+    }
+
+    /**
+     * 销毁Bean前调用
+     * @throws Exception
+     */
+    @Override
+    public void destroy() throws Exception {
+        System.out.println("DisposableBean:销毁UserServiceImpl");
     }
 }

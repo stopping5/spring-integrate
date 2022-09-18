@@ -22,6 +22,7 @@ public class InitBeanDemo {
         System.out.println("应用上下文已经启动...");
         UserServiceImpl userService = applicationContext.getBean(UserServiceImpl.class);
         System.out.println(userService.getInitMethodName());
+        System.out.println("开始销毁Bean");
         applicationContext.close();
     }
 
@@ -29,7 +30,7 @@ public class InitBeanDemo {
      * 作为bean加入到容器
      * @return
      */
-    @Bean(initMethod = "initUserService")
+    @Bean(initMethod = "initUserService",destroyMethod = "destroyUserService")
     @Lazy
     public UserServiceImpl userService(){
         System.out.println("获取userServiceImpl BEAN");
