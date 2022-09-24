@@ -7,16 +7,17 @@ import org.springframework.context.annotation.Lazy;
 import spring.ioc.dependency.init.pojo.UserServiceImpl;
 
 /**
+ *  BeanFactory获取注释的Bean
  * 初始化bean三种操作
  */
 @Configuration
-public class InitBeanDemo {
+public class AnnotationInitBeanDemo {
 
     public static void main(String[] args) {
         //通过注解配置获取上下文
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
         //将InitBeanDemo注册到容器中
-        applicationContext.register(InitBeanDemo.class);
+        applicationContext.register(AnnotationInitBeanDemo.class);
         //加载bean到容器
         applicationContext.refresh();
         System.out.println("应用上下文已经启动...");
