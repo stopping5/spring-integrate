@@ -15,6 +15,15 @@ public class DependencyInjectionDemo {
         UserServiceImpl userService = (UserServiceImpl)beanFactory.getBean("userServiceImpl");
         System.out.println(userService.getUsers());
         //org.springframework.beans.factory.support.DefaultListableBeanFactory
+        whoIsIocContext(beanFactory, userService);
+    }
+
+    /**
+     * 为什么BeanFactory 和 ApplicationContext 来源不一致
+     * @param beanFactory
+     * @param userService
+     */
+    private static void whoIsIocContext(BeanFactory beanFactory, UserServiceImpl userService) {
         //依赖注入的bean跟依赖查找的bean并不是同个内存地址，说明来源不一致
         System.out.println(userService.getBeanFactory());
         System.out.println(beanFactory == userService.getBeanFactory());
