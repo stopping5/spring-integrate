@@ -1,8 +1,11 @@
 package spring.ioc.dependency.lookup;
 
 import org.springframework.beans.factory.ObjectProvider;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
+
+import java.util.Map;
 
 /**
  * 单一依赖查找
@@ -22,8 +25,8 @@ public class SimpleLookupDemo {
     }
 
     private static void lookupByObjectProvider(AnnotationConfigApplicationContext context) {
-        ObjectProvider<String> objectProvider = context.getBeanProvider(String.class);
-        System.out.println(objectProvider.getObject());
+        Map<String,String> objectProvider = context.getBeansOfType(String.class);
+        System.out.println(objectProvider);
     }
 
     @Bean
