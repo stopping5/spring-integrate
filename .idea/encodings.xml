@@ -4,8 +4,10 @@
     <file url="file://$PROJECT_DIR$/spring-feign/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-ioc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-ioc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-magic/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-mongo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-open-resource/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rocket/src/main/java" charset="UTF-8" />
   </component>
 </project>

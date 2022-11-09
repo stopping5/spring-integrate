@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-mongo/spring-mongo.iml" filepath="$PROJECT_DIR$/spring-mongo/spring-mongo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-open-resource/spring-open-resource.iml" filepath="$PROJECT_DIR$/spring-open-resource/spring-open-resource.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-redis/spring-redis.iml" filepath="$PROJECT_DIR$/spring-redis/spring-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rocket/spring-rocket.iml" filepath="$PROJECT_DIR$/spring-rocket/spring-rocket.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-spel/spring-spel.iml" filepath="$PROJECT_DIR$/spring-spel/spring-spel.iml" />
     </modules>
   </component>

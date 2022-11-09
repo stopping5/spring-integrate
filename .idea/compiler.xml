@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-magic" />
+        <module name="spring-rocket" />
         <module name="spring-ioc" />
         <module name="spring-mongo" />
         <module name="spring-open-resource" />
@@ -18,21 +19,24 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-feign" target="1.8" />
-      <module name="spring-ioc" target="1.8" />
-      <module name="spring-magic" target="1.8" />
+      <module name="spring-ioc" target="8" />
+      <module name="spring-magic" target="8" />
       <module name="spring-mongo" target="1.8" />
-      <module name="spring-open-resource" target="1.8" />
+      <module name="spring-open-resource" target="8" />
       <module name="spring-redis" target="1.8" />
-      <module name="spring-spel" target="1.8" />
+      <module name="spring-rocket" target="1.8" />
+      <module name="spring-spel" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-feign" options="-parameters" />
       <module name="spring-ioc" options="-parameters" />
+      <module name="spring-magic" options="-parameters" />
       <module name="spring-mongo" options="-parameters" />
       <module name="spring-open-resource" options="-parameters" />
       <module name="spring-redis" options="-parameters" />
+      <module name="spring-rocket" options="-parameters" />
     </option>
   </component>
 </project>
