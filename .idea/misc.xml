@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/spring-spel/pom.xml" />
         <option value="$PROJECT_DIR$/spring-magic/pom.xml" />
         <option value="$PROJECT_DIR$/spring-rocket/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-rocket-customer/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-rocket-producer/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,6 @@
+server:
+  port: 8081
+rocketmq:
+  name-server: 120.24.242.44:9876
+  producer:
+    group: stopping-group
