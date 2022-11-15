@@ -22,7 +22,7 @@ public class ProducerSendMsgDemo {
     public static final String TOPIC = "SynMsgTopic";
 
     public static void main(String[] args) throws Exception {
-        sendSyncMsg("hello-async");
+        sendOnWayMsg("hello-async");
     }
 
     /**
@@ -103,7 +103,8 @@ public class ProducerSendMsgDemo {
         producer.start();
 
         for (int i = 0; i < 10; i++) {
-            Message message = new Message(TOPIC,"log",msg.getBytes(StandardCharsets.UTF_8));
+            String resultMsg = msg+i;
+            Message message = new Message(TOPIC,"log",resultMsg.getBytes());
             producer.sendOneway(message);
         }
 

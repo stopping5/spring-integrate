@@ -11,7 +11,7 @@ public class Common {
 
     public static final String SYN_MSG_TOPIC = "SynMsgTopic";
 
-    public static final String CUSTOMER_GROUP_NAME = "CustomerGroup";
-
     public static final String ORDER_MSG_TOPIC = "ORDER_MSG_TOPIC";
+
+    public static final String CUSTOMER_GROUP_NAME = "CustomerGroup";
 }
