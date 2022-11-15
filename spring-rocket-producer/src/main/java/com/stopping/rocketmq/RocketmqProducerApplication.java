@@ -18,6 +18,6 @@ public class RocketmqProducerApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        producerExample.sendMsg();
+        producerExample.sendAsyncMsg();
     }
 }

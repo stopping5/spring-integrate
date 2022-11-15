@@ -8,7 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-magic" />
-        <module name="spring-rocket" />
         <module name="spring-ioc" />
         <module name="spring-mongo" />
         <module name="rocketmq-customer" />

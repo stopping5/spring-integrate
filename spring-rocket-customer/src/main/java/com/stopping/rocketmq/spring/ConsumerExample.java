@@ -1,4 +1,4 @@
-package com.stopping.rocketmq.client;
+package com.stopping.rocketmq.spring;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
