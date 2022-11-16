@@ -2,6 +2,7 @@ package com.stopping.rocketmq.client;
 
 import com.stopping.rocketmq.pojo.Common;
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
+import org.apache.rocketmq.client.consumer.MessageSelector;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
@@ -19,7 +20,7 @@ import java.util.List;
 
 public class ClientCustomerDemo {
     public static void main(String[] args) throws MQClientException {
-        defaultMQPushConsumer();
+        pushConsumerProperties();
     }
 
     /**
@@ -31,6 +32,29 @@ public class ClientCustomerDemo {
         consumer.setNamesrvAddr(Common.ADDR);
         //订阅关系（topic 和 标签过滤）
         consumer.subscribe(Common.SYN_MSG_TOPIC,"log");
+        //消息监听
+        consumer.registerMessageListener(new MessageListenerConcurrently() {
+            @Override
+            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
+                System.out.printf("%s Receive New Messages: %s %n", Thread.currentThread().getName(), new String(list.get(0).getBody()));
+                return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
+            }
+        });
+        consumer.start();
+        System.out.println("接收MQ消息完毕");
+    }
+
+    /**
+     * 监听属性SQL过滤消息
+     * @throws MQClientException
+     */
+    public static void pushConsumerProperties() throws MQClientException {
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer(Common.CUSTOMER_GROUP_NAME);
+        consumer.setNamesrvAddr(Common.ADDR);
+        //订阅关系（topic 和 标签过滤）
+        MessageSelector messageSelector = MessageSelector.bySql("add IS NOT NULL AND add = 'hz'");
+        consumer.subscribe("trade_topic",messageSelector);
+        consumer.subscribe("trade_topic",MessageSelector.byTag("order"));
         //消息监听
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override

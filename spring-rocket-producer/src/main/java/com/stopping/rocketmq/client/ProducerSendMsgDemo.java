@@ -1,5 +1,9 @@
 package com.stopping.rocketmq.client;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.stopping.rocketmq.pojo.Common;
+import org.apache.rocketmq.client.apis.message.MessageBuilder;
 import org.apache.rocketmq.client.exception.MQBrokerException;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
@@ -22,7 +26,7 @@ public class ProducerSendMsgDemo {
     public static final String TOPIC = "SynMsgTopic";
 
     public static void main(String[] args) throws Exception {
-        sendOnWayMsg("hello-async");
+        sendPropertiesMsg();
     }
 
     /**
@@ -107,6 +111,24 @@ public class ProducerSendMsgDemo {
             Message message = new Message(TOPIC,"log",resultMsg.getBytes());
             producer.sendOneway(message);
         }
+
+    }
+
+    /**
+     * 发送属性消息
+     */
+    public static void sendPropertiesMsg() throws MQClientException, RemotingException, InterruptedException, MQBrokerException {
+        DefaultMQProducer producer = new DefaultMQProducer("properties_producer");
+        producer.setNamesrvAddr(ADDR);
+        producer.start();
+
+        Message message = new Message();
+        message.setTopic("trade_topic");
+        message.putUserProperty("add","hz");
+        message.setTags("order");
+        message.setBody("hz order".getBytes());
+
+        System.out.println(JSON.toJSON(producer.send(message)));
 
     }
 }
