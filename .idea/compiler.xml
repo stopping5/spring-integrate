@@ -15,6 +15,7 @@
         <module name="spring-spel" />
         <module name="rocketmq-producer" />
         <module name="spring-feign" />
+        <module name="spring-sharding-jdbc" />
         <module name="spring-redis" />
       </profile>
     </annotationProcessing>
@@ -23,13 +24,14 @@
       <module name="rocketmq-customer" target="1.8" />
       <module name="rocketmq-producer" target="1.8" />
       <module name="spring-feign" target="1.8" />
-      <module name="spring-ioc" target="8" />
-      <module name="spring-magic" target="8" />
+      <module name="spring-ioc" target="1.8" />
+      <module name="spring-magic" target="1.8" />
       <module name="spring-mongo" target="1.8" />
-      <module name="spring-open-resource" target="8" />
+      <module name="spring-open-resource" target="1.8" />
       <module name="spring-redis" target="1.8" />
       <module name="spring-rocket" target="1.8" />
-      <module name="spring-spel" target="8" />
+      <module name="spring-sharding-jdbc" target="1.8" />
+      <module name="spring-spel" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
