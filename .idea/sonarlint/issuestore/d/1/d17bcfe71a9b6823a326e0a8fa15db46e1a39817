@@ -1,0 +1,15 @@
+
+`	java:S112D"FDefine and throw a dedicated exception instead of using a generic one.(Ä¤žšúÿÿÿÿ
+[	java:S112h"FDefine and throw a dedicated exception instead of using a generic one.(£ÙÚµ
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(Â¹Š÷
+M	java:S1068"9Replace this use of System.out or System.err by a logger.(€£û)
+N	java:S106N"9Replace this use of System.out or System.err by a logger.(Â¹Š÷
+N	java:S106U"9Replace this use of System.out or System.err by a logger.(÷„µÔ
+S	java:S106Z"9Replace this use of System.out or System.err by a logger.(áÒû¯ýÿÿÿÿ
+N	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(Úå£ 
+R
+java:S1128"<Remove this unused import 'com.alibaba.fastjson.JSONObject'.(äýµ
+T
+java:S1128">Remove this unused import 'com.stopping.rocketmq.pojo.Common'.(ŠÜç¬
+i
+java:S1128"SRemove this unused import 'org.apache.rocketmq.client.apis.message.MessageBuilder'.(™£¾É

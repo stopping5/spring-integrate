@@ -1,0 +1,23 @@
+
+ã
+[spring-rocket-producer/src/main/java/com/stopping/rocketmq/RocketmqProducerApplication.java,f/3/f3bf9abdb67c07d563f3b43628e491ec8a4663d5
+Ü
+Vspring-rocket-producer/src/main/java/com/stopping/rocketmq/spring/ProducerExample.java,f/3/f30d70cbf4509718ad8e87c44a90b6f5a91552db
+É
+Sspring-rocket-producer/src/test/java/com/stopping/rocketmq/ProducerExampleTest.java,b/b/bb3472dfa69f5c3a7375fd1bbc147c762aaa04de
+Ü
+Vspring-rocket-customer/src/main/java/com/stopping/rocketmq/spring/ConsumerExample.java,d/8/d81ccf09db6f3994de1930dd6afeb8dd16af006a
+{
+Kspring-rocket-customer/src/main/java/com/stopping/rocketmq/pojo/Common.java,6/6/66412013a9aab545ae10193563662100e306e707
+å
+\spring-rocket-producer/src/main/java/com/stopping/rocketmq/client/DefaultMQCustomerDemo.java,a/a/aaa6355f6f99c8085a67b991a4a61fc2a0031632
+P
+ spring-rocket-producer/readme.md,4/f/4f82ad0093079a50fe142217a5f24cc747aef2d7
+è
+_spring-rocket-producer/src/main/java/com/stopping/rocketmq/client/OrderProducerSendMsgDemo.java,4/f/4f864e7f4becf3be955e9856c5e97694657a5ab1
+â
+Yspring-rocket-customer/src/main/java/com/stopping/rocketmq/client/ClientCustomerDemo.java,3/1/31b8190a784340f0e6f378faa815b05af542ec68
+ä
+Zspring-rocket-producer/src/main/java/com/stopping/rocketmq/client/ProducerSendMsgDemo.java,d/1/d17bcfe71a9b6823a326e0a8fa15db46e1a39817
+D
+spring-feign/pom.xml,8/6/864a50f5611fe266dd3812ad6c65c0a03411b039
