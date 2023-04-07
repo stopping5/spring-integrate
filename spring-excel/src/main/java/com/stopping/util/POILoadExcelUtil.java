@@ -25,10 +25,15 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class POILoadExcelUtil {
 
     public static void main(String[] args) {
-        readExcel("/Users/stopping/stopping/spring-integrate/spring-excel/src/main/resources/arrive-table-1.xlsx"," im_arrive_customer_info ");
+        alterTable("/Users/stopping/stopping/spring-integrate/spring-excel/src/main/resources/arrive-table-1.xlsx"," im_arrive_customer_info "," MODIFY COLUMN ");
     }
 
-    public static void readExcel(String excelFilePath,String tableName) {
+
+    public static void createTable(String excelFilePath,String tableName){
+
+    }
+
+    public static void alterTable(String excelFilePath,String tableName,String operation) {
         StringBuilder stringBuilder = new StringBuilder();
         // Load the Excel file
         File file = new File(excelFilePath);
@@ -47,7 +52,7 @@ public class POILoadExcelUtil {
 
         // Iterate over the rows in the sheet
         for (Row row : sheet) {
-            stringBuilder.append("ALTER TABLE ").append(tableName).append(" ADD COLUMN ");
+            stringBuilder.append("ALTER TABLE ").append(tableName).append(operation);
             // Iterate over the cells in the row
             for (int i = 0; i < row.getRowNum(); i++) {
 
@@ -59,11 +64,12 @@ public class POILoadExcelUtil {
                          break;
                      //类型
                      case 1:
-                        stringBuilder.append(stringCellValue+" COLLATE utf8mb4_unicode_ci ");
+                        String type = stringCellValue.contains("VARCHAR") ? stringCellValue+" COLLATE utf8mb4_unicode_ci" : stringCellValue;
+                        stringBuilder.append(" "+type);
                         break;
                      //类型
                      case 2:
-                         stringBuilder.append(StringUtils.isBlank(stringCellValue)? "" : "NOT NULL");
+                         stringBuilder.append(StringUtils.isBlank(stringCellValue)? "" : " NOT NULL");
                          break;
                      // 备注
                      case 3:
