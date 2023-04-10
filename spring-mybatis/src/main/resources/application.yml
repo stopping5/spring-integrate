@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driverClass: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://ideamake-test.mysql.rds.aliyuncs.com:3306/data_import?useUnicode=true&useSSL=false&&serverTimezone=Asia/Shanghai&autoReconnect=true
+    username: ideamake_dbuser
+    password: 1a!gHco@d2mrgf^*^4lwGpB^

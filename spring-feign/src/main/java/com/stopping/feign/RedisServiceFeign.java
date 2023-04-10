@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author: stopping
  */
 @Component
-@FeignClient(value = "redis-service",url = "localhost:8080",path = "/redis")
+@FeignClient(value = "redis-com.stopping.service",url = "localhost:8080",path = "/redis")
 public interface RedisServiceFeign {
     /**
      * 获取缓存数据

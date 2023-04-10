@@ -17,6 +17,7 @@
         <module name="rocketmq-producer" />
         <module name="spring-feign" />
         <module name="spring-sharding-jdbc" />
+        <module name="spring-mybatis" />
         <module name="spring-redis" />
       </profile>
     </annotationProcessing>
@@ -29,6 +30,7 @@
       <module name="spring-ioc" target="8" />
       <module name="spring-magic" target="8" />
       <module name="spring-mongo" target="1.8" />
+      <module name="spring-mybatis" target="8" />
       <module name="spring-open-resource" target="8" />
       <module name="spring-redis" target="1.8" />
       <module name="spring-rocket" target="1.8" />
@@ -45,6 +47,7 @@
       <module name="spring-ioc" options="-parameters" />
       <module name="spring-magic" options="-parameters" />
       <module name="spring-mongo" options="-parameters" />
+      <module name="spring-mybatis" options="-parameters" />
       <module name="spring-open-resource" options="-parameters" />
       <module name="spring-redis" options="-parameters" />
       <module name="spring-rocket" options="-parameters" />
