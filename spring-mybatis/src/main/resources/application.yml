@@ -1,6 +1,12 @@
 spring:
   datasource:
-    driverClass: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://ideamake-test.mysql.rds.aliyuncs.com:3306/data_import?useUnicode=true&useSSL=false&&serverTimezone=Asia/Shanghai&autoReconnect=true
-    username: ideamake_dbuser
-    password: 1a!gHco@d2mrgf^*^4lwGpB^
+    test-database:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/test_database?useUnicode=true&useSSL=false&&serverTimezone=Asia/Shanghai&autoReconnect=true
+      username: root
+      password: xdp123456
+    user-database:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/user_database?useUnicode=true&useSSL=false&&serverTimezone=Asia/Shanghai&autoReconnect=true
+      username: root
+      password: xdp123456

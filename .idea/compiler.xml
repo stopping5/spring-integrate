@@ -17,29 +17,30 @@
         <module name="rocketmq-producer" />
         <module name="spring-feign" />
         <module name="spring-sharding-jdbc" />
-        <module name="spring-mybatis" />
         <module name="spring-redis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="multi-data-resource" target="1.8" />
       <module name="rocketmq" target="1.8" />
       <module name="rocketmq-customer" target="1.8" />
       <module name="rocketmq-producer" target="1.8" />
-      <module name="spring-excel" target="8" />
+      <module name="spring-excel" target="1.8" />
       <module name="spring-feign" target="1.8" />
-      <module name="spring-ioc" target="8" />
-      <module name="spring-magic" target="8" />
+      <module name="spring-ioc" target="1.8" />
+      <module name="spring-magic" target="1.8" />
       <module name="spring-mongo" target="1.8" />
-      <module name="spring-mybatis" target="8" />
-      <module name="spring-open-resource" target="8" />
+      <module name="spring-mybatis" target="1.8" />
+      <module name="spring-open-resource" target="1.8" />
       <module name="spring-redis" target="1.8" />
       <module name="spring-rocket" target="1.8" />
-      <module name="spring-sharding-jdbc" target="8" />
-      <module name="spring-spel" target="8" />
+      <module name="spring-sharding-jdbc" target="1.8" />
+      <module name="spring-spel" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="multi-data-resource" options="-parameters" />
       <module name="rocketmq" options="-parameters" />
       <module name="rocketmq-customer" options="-parameters" />
       <module name="rocketmq-producer" options="-parameters" />
