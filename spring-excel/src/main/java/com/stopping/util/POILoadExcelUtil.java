@@ -25,7 +25,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class POILoadExcelUtil {
 
     public static void main(String[] args) {
-        alterTable("/Users/stopping/stopping/spring-integrate/spring-excel/src/main/resources/arrive-table-1.xlsx"," im_arrive_customer_info "," MODIFY COLUMN ");
+        alterTable("/Users/stopping/stopping/spring-integrate/spring-excel/src/main/resources/yx-money.xlsx"," im_marketing_payment "," ADD COLUMN ");
     }
 
 
@@ -34,6 +34,7 @@ public class POILoadExcelUtil {
     }
 
     public static void alterTable(String excelFilePath,String tableName,String operation) {
+        boolean isHeader = true;
         StringBuilder stringBuilder = new StringBuilder();
         // Load the Excel file
         File file = new File(excelFilePath);
@@ -52,10 +53,14 @@ public class POILoadExcelUtil {
 
         // Iterate over the rows in the sheet
         for (Row row : sheet) {
-            stringBuilder.append("ALTER TABLE ").append(tableName).append(operation);
+            if (isHeader){
+                isHeader = false;
+            }else{
+                stringBuilder.append("ALTER TABLE ").append(tableName).append(operation);
+            }
             // Iterate over the cells in the row
-            for (int i = 0; i < row.getRowNum(); i++) {
-
+            int n = 4;
+            for (int i = 0; i < n; i++) {
                  String stringCellValue = Objects.isNull(row.getCell(i)) ? "" : row.getCell(i).getStringCellValue();
                  switch (i){
                      //字段名称
@@ -69,7 +74,7 @@ public class POILoadExcelUtil {
                         break;
                      //类型
                      case 2:
-                         stringBuilder.append(StringUtils.isBlank(stringCellValue)? "" : " NOT NULL");
+                         stringBuilder.append(stringCellValue.equals("是")? " NOT NULL" : " ");
                          break;
                      // 备注
                      case 3:

@@ -21,3 +21,9 @@ Yspring-rocket-customer/src/main/java/com/stopping/rocketmq/client/ClientCustome
 Zspring-rocket-producer/src/main/java/com/stopping/rocketmq/client/ProducerSendMsgDemo.java,d/1/d17bcfe71a9b6823a326e0a8fa15db46e1a39817
 D
 spring-feign/pom.xml,8/6/864a50f5611fe266dd3812ad6c65c0a03411b039
+q
+Aspring-mybatis/src/main/java/com/stopping/service/TagService.java,e/e/ee1ee08ebcdf72456fc20157b2095e39655147aa
+x
+Hspring-mybatis/src/main/java/com/stopping/dao/mapper/test/TagMapper.java,e/5/e501482f7f446f7f625696665fa1ce7cf215c2bf
+n
+>spring-mybatis/src/main/java/com/stopping/pojo/entity/Tag.java,f/4/f460ff1844834a4fb35f922701141c7cfb783071
