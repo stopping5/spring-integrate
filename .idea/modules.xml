@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/spring-rocket-customer/rocketmq-customer.iml" filepath="$PROJECT_DIR$/spring-rocket-customer/rocketmq-customer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-rocket-producer/rocketmq-producer.iml" filepath="$PROJECT_DIR$/spring-rocket-producer/rocketmq-producer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-excel/spring-excel.iml" filepath="$PROJECT_DIR$/spring-excel/spring-excel.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-feign/spring-feign.iml" filepath="$PROJECT_DIR$/spring-feign/spring-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-integrate.iml" filepath="$PROJECT_DIR$/.idea/spring-integrate.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ioc/spring-ioc.iml" filepath="$PROJECT_DIR$/spring-ioc/spring-ioc.iml" />
