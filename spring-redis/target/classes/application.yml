@@ -1,9 +1,8 @@
 
 spring:
   redis:
-    host: 120.24.242.44
-    port: 60001
-    password: xdp123456
+    host: 127.0.0.1
+    port: 6379
     database: 0
     jedis:
       pool:
