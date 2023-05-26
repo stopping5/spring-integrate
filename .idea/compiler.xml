@@ -7,17 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-magic" />
         <module name="spring-excel" />
         <module name="spring-ioc" />
-        <module name="spring-spi" />
-        <module name="spring-mongo" />
         <module name="rocketmq-customer" />
         <module name="spring-open-resource" />
-        <module name="spring-spel" />
         <module name="rocketmq-producer" />
         <module name="spring-feign" />
         <module name="spring-sharding-jdbc" />
+        <module name="spring-magic" />
+        <module name="spring-spi" />
+        <module name="spring-mongo" />
+        <module name="spring-spel" />
+        <module name="spring-integrate" />
+        <module name="springboot-simple" />
         <module name="spring-redis" />
       </profile>
     </annotationProcessing>
@@ -34,6 +36,7 @@
       <module name="rocketmq-customer" options="-parameters" />
       <module name="rocketmq-producer" options="-parameters" />
       <module name="spring-feign" options="-parameters" />
+      <module name="spring-integrate" options="-parameters" />
       <module name="spring-ioc" options="-parameters" />
       <module name="spring-magic" options="-parameters" />
       <module name="spring-mongo" options="-parameters" />
@@ -41,6 +44,7 @@
       <module name="spring-open-resource" options="-parameters" />
       <module name="spring-redis" options="-parameters" />
       <module name="spring-rocket" options="-parameters" />
+      <module name="springboot-simple" options="-parameters" />
     </option>
   </component>
 </project>

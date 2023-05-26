@@ -22,6 +22,8 @@
         <option value="$PROJECT_DIR$/spring-excel/pom.xml" />
         <option value="$PROJECT_DIR$/spring-mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/spring-spi/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-simple/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

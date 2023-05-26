@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring-feign/spring-feign.iml" filepath="$PROJECT_DIR$/spring-feign/spring-feign.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/spring-integrate.iml" filepath="$PROJECT_DIR$/.idea/spring-integrate.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ioc/spring-ioc.iml" filepath="$PROJECT_DIR$/spring-ioc/spring-ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-magic/spring-magic.iml" filepath="$PROJECT_DIR$/spring-magic/spring-magic.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mongo/spring-mongo.iml" filepath="$PROJECT_DIR$/spring-mongo/spring-mongo.iml" />
