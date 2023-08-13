@@ -10,15 +10,15 @@
         <module name="spring-excel" />
         <module name="spring-ioc" />
         <module name="rocketmq-customer" />
-        <module name="spring-open-resource" />
         <module name="rocketmq-producer" />
+        <module name="spring-open-resource" />
         <module name="spring-feign" />
         <module name="spring-sharding-jdbc" />
         <module name="spring-magic" />
         <module name="spring-spi" />
         <module name="spring-mongo" />
+        <module name="springboot-function" />
         <module name="spring-spel" />
-        <module name="spring-integrate" />
         <module name="springboot-simple" />
         <module name="spring-redis" />
       </profile>
@@ -44,6 +44,7 @@
       <module name="spring-open-resource" options="-parameters" />
       <module name="spring-redis" options="-parameters" />
       <module name="spring-rocket" options="-parameters" />
+      <module name="springboot-function" options="-parameters" />
       <module name="springboot-simple" options="-parameters" />
     </option>
   </component>

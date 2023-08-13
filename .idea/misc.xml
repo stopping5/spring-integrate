@@ -24,6 +24,7 @@
         <option value="$PROJECT_DIR$/spring-spi/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-simple/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-function/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

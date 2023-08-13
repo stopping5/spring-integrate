@@ -5,9 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.stopping</groupId>
-    <artifactId>spring-integrate</artifactId>
+    <artifactId>springboot-function</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -15,10 +14,11 @@
         <version>2.4.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <description>spring integrate</description>
 
     <properties>
-        <java.version>1.8</java.version>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -26,19 +26,30 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.taobao.arthas</groupId>
+            <artifactId>arthas-spring-boot-starter</artifactId>
+            <version>3.6.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.7.17</version>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
