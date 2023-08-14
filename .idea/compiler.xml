@@ -36,7 +36,7 @@
       <module name="rocketmq-customer" options="-parameters" />
       <module name="rocketmq-producer" options="-parameters" />
       <module name="spring-feign" options="-parameters" />
-      <module name="spring-integrate" options="-parameters" />
+      <module name="spring-integrate" options="" />
       <module name="spring-ioc" options="-parameters" />
       <module name="spring-magic" options="-parameters" />
       <module name="spring-mongo" options="-parameters" />

@@ -25,11 +25,11 @@ public class ServiceA {
     private ServiceB serviceB;
 
     private final ThreadPoolExecutor THREAD_POOL =
-            new ThreadPoolExecutor(5,
-                    8,
+            new ThreadPoolExecutor(2,
+                    4,
                     1000,
                     TimeUnit.MILLISECONDS,
-                    new LinkedBlockingQueue<>(100),
+                    new LinkedBlockingQueue<>(2),
                     Executors.defaultThreadFactory(),
                     new ThreadPoolExecutor.CallerRunsPolicy());
 
@@ -52,6 +52,10 @@ public class ServiceA {
                 serviceB.sendBService(s);
             });
         });
+        THREAD_POOL.shutdown();
+        while (!THREAD_POOL.isTerminated()){
+
+        }
         System.out.println("异步逻辑执行完毕");
     }
 }
