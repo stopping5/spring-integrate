@@ -1,6 +1,7 @@
 package com.stopping.thread;
 
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.date.StopWatch;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
@@ -47,6 +48,8 @@ public class ServiceA {
 
     public void asyncRun(){
         System.out.println("异步逻辑开始执行");
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start();
         get().stream().forEach(s->{
             THREAD_POOL.submit(()->{
                 serviceB.sendBService(s);
@@ -56,6 +59,7 @@ public class ServiceA {
         while (!THREAD_POOL.isTerminated()){
 
         }
-        System.out.println("异步逻辑执行完毕");
+        stopWatch.stop();
+        System.out.println("异步逻辑执行完毕 耗时 = " + stopWatch.getTotalTimeMillis() + "ms");
     }
 }
