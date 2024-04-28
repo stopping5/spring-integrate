@@ -1,6 +1,4 @@
 server:
   port: 8081
-
-arthas:
-  agent-id: stopping
-  tunnel-server: ws://192.168.123.119:7777/ws
+  servlet:
+    context-path: /st

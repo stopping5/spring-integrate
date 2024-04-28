@@ -2,6 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-parent/2.4.4/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../program-environment/apache-maven-3.6.3-bin/repository/org/springframework/boot/spring-boot-starter-parent/2.4.4/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/delay-message-notify/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/delay-message-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-feign/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-function/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-ioc/src/main/java" charset="UTF-8" />
@@ -20,6 +23,5 @@
     <file url="file://$PROJECT_DIR$/springboot-simple/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../program-environment/apache-maven-3.6.3-bin/repository/org/springframework/boot/spring-boot-starter-parent/2.4.4/src/main/resources" charset="UTF-8" />
   </component>
 </project>
