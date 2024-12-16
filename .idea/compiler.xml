@@ -19,11 +19,14 @@
         <module name="spring-mongo" />
         <module name="springboot-function" />
         <module name="spring-spel" />
+        <module name="spring-mybatis-01" />
         <module name="springboot-simple" />
         <module name="spring-redis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="delay-message-starter" target="1.8" />
+      <module name="kafka-demo" target="1.8" />
       <module name="multi-data-resource" target="1.8" />
       <module name="rocketmq" target="1.8" />
       <module name="spring-rocket" target="1.8" />
@@ -41,6 +44,7 @@
       <module name="spring-magic" options="-parameters" />
       <module name="spring-mongo" options="-parameters" />
       <module name="spring-mybatis" options="" />
+      <module name="spring-mybatis-01" options="-parameters" />
       <module name="spring-open-resource" options="-parameters" />
       <module name="spring-redis" options="-parameters" />
       <module name="spring-rocket" options="-parameters" />

@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <import resource="dependency-lookup-content.xml"/>
     <!--依赖注入 自动注入到-->
-    <bean id="userServiceImpl" class="spring.ioc.dependency.injection.service.UserServiceImpl"
+    <bean id="userServiceImpl" class="spring.ioc.dependency.injection.com.stopping.service.UserServiceImpl"
           autowire="byType">
     </bean>
 
