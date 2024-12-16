@@ -54,4 +54,11 @@ public class SubService {
 
         throw new RuntimeException("has ex");
     }
+
+
+    public void requiredNotTransactional(){
+        Coupon coupon = new Coupon();
+        coupon.setName("优惠券");
+        couponService.insertCoupon(coupon,true);
+    }
 }

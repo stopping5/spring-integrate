@@ -1,6 +1,7 @@
 package com.kafka.springmybatis01.transcation;
 
 import com.kafka.springmybatis01.service.transcation.RequiredNewService;
+import com.kafka.springmybatis01.service.transcation.RequiredService;
 import com.kafka.springmybatis01.service.transcation.SupportService;
 import com.kafka.springmybatis01.service.transcation.TransactionalDemo;
 import jakarta.annotation.Resource;
@@ -16,6 +17,9 @@ class TransactionalDemoTest {
     @Resource
     private SupportService supportService;
 
+    @Resource
+    private RequiredService requiredService;
+
     @Test
     public void requiredToRequiredNew(){
         requiredNewService.requiredToRequiredNewOut();
@@ -29,5 +33,10 @@ class TransactionalDemoTest {
 //        supportService.requiredToSupport();
 
         supportService.notTransactionalToSupport();
+    }
+
+    @Test
+    public void requiredToTransactional(){
+        requiredService.requiredInNotTransaction();
     }
 }

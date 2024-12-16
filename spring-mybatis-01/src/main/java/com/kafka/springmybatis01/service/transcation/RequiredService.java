@@ -31,5 +31,16 @@ public class RequiredService {
         subService.required();
     }
 
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void requiredInNotTransaction() {
+        User user = new User().setPassword("123").setUsername("xs");
+        System.out.println("save user = " +  user.toString());
+        userService.insert(user,false);
+        System.out.println("调用其他事务方法");
+        subService.requiredNotTransactional();
+
+        throw new RuntimeException("has ex");
+    }
+
 }
 
